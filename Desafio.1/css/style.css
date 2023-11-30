@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Roboto Black Italic';
+    src: url(../assets/Roboto-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+.cuerpo{
+        margin-left: 167px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;   
+  }
+.container {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    background: url(../assets/img/fondo\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 167px;
+}
+
+.prueba {
+    font-size: 3em;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(20%, -40%);
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    text-align: center; 
+    
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.imagen-content {
+    position: relative;
+    display: inline-block;
+    left: 150px; 
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+}
+
+.transicion {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 90%;
+    height: 100%;
+    background-size: contain; 
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen-content:hover .transicion {
+    opacity: 1;
+    background: url(/assets/img/imagen.jpg);
+}
+
+

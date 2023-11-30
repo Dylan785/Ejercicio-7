@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.h1{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text-box {
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: moveRight 1s forwards;
+
+}
+#text1 {
+    background-color: orange;
+    animation-delay: 0.5s; 
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+#text2 {
+    background-color: palegoldenrod;
+    animation-delay: 1.5s; 
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#text3 {
+    background-color: pink;
+    animation-delay: 2.5s; 
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@keyframes moveRight {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 80%;
+    }
+}
+
